@@ -1,0 +1,399 @@
+<?
+$Menu = "02";
+$sMenu = "02-1";
+
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.html'; 
+?>
+	
+	<script type="text/javascript" language="javascript">
+		// �씠硫붿씪
+		function email_address_select(val){
+			$("#email_address_input").val(val);
+			$("#email_address_input").focus();
+		}
+	</script>
+
+	<div id="container">
+		<div id="sub_con">
+			<? include $_SERVER['DOCUMENT_ROOT'].'/rental/include/rental_tn.html'; ?>
+
+			<div class="contents_con">
+				
+				<form>
+					<div class="rental_sub01_write_con">
+						<div class="title_con">
+							<img src="/UserMan2/images/rental/rental_sub01_write_title.png" alt="�떊泥��븯湲�" />
+						</div>
+
+						<div class="si_con">
+							<div class="sort_con">
+								<table cellpadding="0" cellspacing="0">
+									<tbody>
+										<tr>
+											<td align="left" class="title_td" width="47">
+												<span>
+													援щ텇
+												</span>
+											</td>
+											<td align="left" class="info_td">
+												<label>
+													<input type="radio" name="sort_type" checked="checked" />
+													<span>
+														�냽湲곌뎄
+													</span>
+												</label>
+
+												<label>
+													<input type="radio" name="sort_type" />
+													<span>
+														�냽�옉吏�
+													</span>
+												</label>
+
+												<label>
+													<input type="radio" name="sort_type" />
+													<span>
+														�씪�씪�냽�옣
+													</span>
+												</label>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="intro_con">
+								<span>
+									( <font class="dot">��</font> ) 湲곕낯�젙蹂� �븘�닔 �엯�젰�궗�빆 �엯�땲�떎.
+								</span>
+							</div>
+						</div>
+
+						<div class="write_con">
+							<div class="list_div">
+								<div class="title_con">
+									<img src="/UserMan2/images/rental/rental_sub01_write_sub_title01.png" alt="�샇�뒪�듃 �젙蹂�" />
+								</div>
+
+								<div class="input_con">
+									<table cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" class="title_td" width="163">
+													<span>
+														<font class="dot_off">��</font> �떊泥��븯�떊 �긽�뭹紐�
+													</span>
+												</td>
+												<td align="left" class="info_td" width="368">
+													<input type="text" name="" class="input" style="width:336px;" />
+												</td>
+												<td align="left" class="title_td" width="163">
+													<span>
+														<font class="dot_off">��</font> �샇�뒪�듃�씠由� / �뾽泥대챸
+													</span>
+												</td>
+												<td align="left" class="info_td" width="367">
+													<input type="text" name="" class="input" style="width:335px;" />
+												</td>
+											</tr>
+											<tr>
+												<td align="left" class="title_td">
+													<span>
+														<font class="dot_off">��</font> �뾽泥� �뿰�씫泥�
+													</span>
+												</td>
+												<td colspan="3" align="left" class="info_td">
+													<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td align="left">
+																	<select name="" class="select" style="width:84px;">
+																		<option value="">�꽑�깮</option>
+																		<option value="02">02</option>
+																		<option value="031">031</option>
+																		<option value="032">032</option>
+																		<option value="033">033</option>
+																		<option value="041">041</option>
+																		<option value="042">042</option>
+																		<option value="043">043</option>
+																		<option value="051">051</option>
+																		<option value="052">052</option>
+																		<option value="053">053</option>
+																		<option value="054">054</option>
+																		<option value="055">055</option>
+																		<option value="061">061</option>
+																		<option value="062">062</option>
+																		<option value="063">063</option>
+																		<option value="064">064</option>
+																		<option value="070">070</option>
+																		<option value="080">080</option>
+																		<option value="010">010</option>
+																		<option value="011">011</option>
+																		<option value="016">016</option>
+																		<option value="017">017</option>
+																		<option value="018">018</option>
+																		<option value="019">019</option>
+																	</select>
+																</td>
+																<td align="center" width="20">
+																	<span>
+																		-
+																	</span>
+																</td>
+																<td align="left">
+																	<input type="tel" name="" maxlength="4" class="input" style="width:72px;" />
+																</td>
+																<td align="center" width="20">
+																	<span>
+																		-
+																	</span>
+																</td>
+																<td align="left">
+																	<input type="tel" name="" maxlength="4" class="input" style="width:72px;" />
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" class="title_td">
+													<span>
+														<font class="dot_off">��</font> 吏��뿭
+													</span>
+												</td>
+												<td colspan="3" align="left" class="info_td">
+													<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td align="left">
+																	<select name="" class="select" style="width:84px;">
+																		<option value="">�꽑�깮</option>
+																	</select>
+																</td>
+																<td align="center" width="8">&nbsp;</td>
+																<td align="left">
+																	<select name="" class="select" style="width:84px;">
+																		<option value="">�꽑�깮</option>
+																	</select>
+																</td>
+																<td align="center" width="8">&nbsp;</td>
+																<td align="left">
+																	<input type="text" name="" placeholder="(�굹癒몄�二쇱냼)" class="input" style="width:688px;" />
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<div class="list_div">
+								<div class="title_con">
+									<img src="/UserMan2/images/rental/rental_sub01_write_sub_title02.png" alt="寃뚯뒪�듃 �젙蹂�" />
+								</div>
+
+								<div class="input_con">
+									<table cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" class="title_td">
+													<span>
+														<font class="dot">��</font> 寃뚯뒪�듃 �씠由�
+													</span>
+												</td>
+												<td colspan="3" align="left" class="info_td">
+													<input type="text" name="" class="input" style="width:336px;" />
+												</td>
+											</tr>
+											<tr>
+												<td align="left" class="title_td">
+													<span>
+														<font class="dot">��</font> 蹂몄씤 �뿰�씫泥�
+													</span>
+												</td>
+												<td colspan="3" align="left" class="info_td">
+													<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td align="left">
+																	<select name="" class="select" style="width:84px;">
+																		<option value="">�꽑�깮</option>
+																		<option value="02">02</option>
+																		<option value="031">031</option>
+																		<option value="032">032</option>
+																		<option value="033">033</option>
+																		<option value="041">041</option>
+																		<option value="042">042</option>
+																		<option value="043">043</option>
+																		<option value="051">051</option>
+																		<option value="052">052</option>
+																		<option value="053">053</option>
+																		<option value="054">054</option>
+																		<option value="055">055</option>
+																		<option value="061">061</option>
+																		<option value="062">062</option>
+																		<option value="063">063</option>
+																		<option value="064">064</option>
+																		<option value="070">070</option>
+																		<option value="080">080</option>
+																		<option value="010">010</option>
+																		<option value="011">011</option>
+																		<option value="016">016</option>
+																		<option value="017">017</option>
+																		<option value="018">018</option>
+																		<option value="019">019</option>
+																	</select>
+																</td>
+																<td align="center" width="20">
+																	<span>
+																		-
+																	</span>
+																</td>
+																<td align="left">
+																	<input type="tel" name="" maxlength="4" class="input" style="width:72px;" />
+																</td>
+																<td align="center" width="20">
+																	<span>
+																		-
+																	</span>
+																</td>
+																<td align="left">
+																	<input type="tel" name="" maxlength="4" class="input" style="width:72px;" />
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" class="title_td">
+													<span>
+														<font class="dot">��</font> �씠硫붿씪二쇱냼
+													</span>
+												</td>
+												<td colspan="3" align="left" class="info_td">
+													<table cellpadding="0" cellspacing="0">
+														<tbody>
+															<tr>
+																<td align="left">
+																	<input type="text" name="email_id" value="" class="input" style="width:158px;">
+																</td>
+																<td align="center" width="30">
+																	<span>@</span>
+																</td>
+																<td width="180">
+																	<input type="text" name="email_add" id="email_address_input" value="" class="input" style="width:158px;">
+																</td>
+																<td align="left">
+																	<select onchange="email_address_select(this.value)" class="select" style="width:180px;">
+																		<option value="">�꽑�깮�븯�꽭�슂</option>
+																		<option value="gmail.com">gmail.com</option>
+																		<option value="naver.com">naver.com</option>
+																		<option value="daum.net">daum.net</option>
+																		<option value="nate.com">nate.com</option>
+																		<option value="hanmail.net">hanmail.net</option>
+																		<option value="hotmail.com">hotmail.com</option>
+																		<option value="yahoo.co.kr">yahoo.co.kr</option>
+																		<option value="lycos.co.kr">lycos.co.kr</option>
+																		<option value="">吏곸젒�엯�젰</option>
+																	</select>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" class="title_td" width="163">
+													<span>
+														<font class="dot">��</font> �떊泥��씤�썝/媛쒖닔
+													</span>
+												</td>
+												<td align="left" class="info_td" width="368">
+													<input type="text" name="" class="input" style="width:58px; margin-right:10px;" />
+													<span>
+														/
+													</span>
+													<input type="text" name="" class="input" style="width:58px; margin-left:10px;" />
+												</td>
+												<td align="left" class="title_td" width="163">
+													<span>
+														<font class="dot">��</font> 珥� �슂湲�
+													</span>
+												</td>
+												<td align="left" class="info_td" width="367">
+													<input type="text" name="" class="input" style="width:268px; margin-right:10px;" />
+													<span>
+														(1�씪 湲곗�)
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="btn_con">
+							<a href="javascript:history.go(-1);">
+								<img src="/UserMan2/images/rental/rental_sub01_write_btn01.png" alt="�쟾�떒怨꾨줈 �씠�룞" />
+							</a>
+
+							<a href="javascript:alert_message();">
+								<img src="/UserMan2/images/rental/rental_sub01_write_btn02.png" alt="�벑濡앹셿猷�" />
+							</a>
+						</div>
+					</div>
+				</form>
+
+				<div id="alert_con">
+					<div class="title_con">
+						<table cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left">
+										<span>
+											�쎒 �럹�씠吏� 硫붿꽭吏�
+										</span>
+									</td>
+									<td align="center" width="21">
+										<a href="javascript:alert_message();">
+											<img src="/UserMan2/images/sub/alert_close_btn.png" alt="X" />
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="contents_con">
+						<div class="intro_con">
+							<div class="img_con">
+								<img src="/UserMan2/images/rental/rental_sub01_write_alert_img.png" alt="�뼹�읉李� �씠誘몄�" />
+							</div>
+
+							<div class="text_con">
+								<span>
+									�벑濡앹씠 �셿猷뚮릺�뿀�뒿�땲�떎. <br />
+									媛먯궗�빀�땲�떎.
+								</span>
+							</div>
+						</div>
+
+						<div class="btn_con">
+							<a href="#" class="a_btn">
+								�솗�씤
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<? include $_SERVER['DOCUMENT_ROOT'].'/include/footer.html'; ?>	

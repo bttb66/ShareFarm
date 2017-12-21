@@ -1,0 +1,543 @@
+<?
+$Menu = "02";
+$sMenu = "02-3";
+
+include $_SERVER['DOCUMENT_ROOT'].'/include/header.html'; 
+?>
+	
+	<div id="container">
+		<div id="sub_con">
+			<? include $_SERVER['DOCUMENT_ROOT'].'/rental/include/rental_tn.html'; ?>
+
+			<div class="contents_con">
+				
+				<form>
+					<div class="rental_sub03_con">
+						<div class="title_con">
+							<img src="/UserMan2/images/rental/rental_sub03_title.png" alt="�벑濡앺븯湲�" />
+						</div>
+
+						<div class="si_con">
+							<div class="sort_con">
+								<table cellpadding="0" cellspacing="0">
+									<tbody>
+										<tr>
+											<td align="left" class="title_td" width="47">
+												<span>
+													援щ텇
+												</span>
+											</td>
+											<td align="left" class="info_td">
+												<label>
+													<input type="radio" name="sort_type" checked="checked" />
+													<span>
+														�냽湲곌뎄
+													</span>
+												</label>
+
+												<label>
+													<input type="radio" name="sort_type" />
+													<span>
+														�냽�옉吏�
+													</span>
+												</label>
+
+												<label>
+													<input type="radio" name="sort_type" />
+													<span>
+														�씪�씪�냽�옣
+													</span>
+												</label>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="intro_con">
+								<span>
+									( <font class="dot">��</font> ) 湲곕낯�젙蹂� �븘�닔 �엯�젰�궗�빆 �엯�땲�떎.
+								</span>
+							</div>
+						</div>
+
+						<div class="input_con">
+							<table cellpadding="0" cellspacing="0">
+								<tbody>
+									<tr>
+										<td align="left" class="title_td" width="163">
+											<span>
+												<font class="dot">��</font> �샇�뒪�듃 �씠由�
+											</span>
+										</td>
+										<td align="left" class="info_td" width="368">
+											<input type="text" name="" class="input" style="width:336px;" />
+										</td>
+										<td align="left" class="title_td" width="163">
+											<span>
+												<font class="dot">��</font> �긽�뭹紐�
+											</span>
+										</td>
+										<td align="left" class="info_td" width="367">
+											<input type="text" name="" class="input" style="width:335px;" />
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="title_td">
+											<span>
+												<font class="dot">��</font> 鍮꾨�踰덊샇
+											</span>
+										</td>
+										<td colspan="3" align="left" class="info_td">
+											<input type="password" name="" class="input" style="width:268px; margin-right:10px;" />
+											<span>
+												(�쁺臾� ���냼臾몄옄/�닽�옄 4�옄~16�옄)
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="title_td">
+											<span>
+												<font class="dot">��</font> �뿰�씫泥�
+											</span>
+										</td>
+										<td colspan="3" align="left" class="info_td">
+											<table cellpadding="0" cellspacing="0">
+												<tbody>
+													<tr>
+														<td align="left">
+															<select name="" class="select" style="width:84px;">
+																<option value="">�꽑�깮</option>
+																<option value="02">02</option>
+																<option value="031">031</option>
+																<option value="032">032</option>
+																<option value="033">033</option>
+																<option value="041">041</option>
+																<option value="042">042</option>
+																<option value="043">043</option>
+																<option value="051">051</option>
+																<option value="052">052</option>
+																<option value="053">053</option>
+																<option value="054">054</option>
+																<option value="055">055</option>
+																<option value="061">061</option>
+																<option value="062">062</option>
+																<option value="063">063</option>
+																<option value="064">064</option>
+																<option value="070">070</option>
+																<option value="080">080</option>
+																<option value="010">010</option>
+																<option value="011">011</option>
+																<option value="016">016</option>
+																<option value="017">017</option>
+																<option value="018">018</option>
+																<option value="019">019</option>
+															</select>
+														</td>
+														<td align="center" width="20">
+															<span>
+																-
+															</span>
+														</td>
+														<td align="left">
+															<input type="tel" name="" maxlength="4" class="input" style="width:72px;" />
+														</td>
+														<td align="center" width="20">
+															<span>
+																-
+															</span>
+														</td>
+														<td align="left">
+															<input type="tel" name="" maxlength="4" class="input" style="width:72px;" />
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="title_td">
+											<span>
+												<font class="dot">��</font> �슂湲�
+											</span>
+										</td>
+										<td colspan="3" align="left" class="info_td">
+											<input type="text" name="" class="input" style="width:268px; margin-right:10px;" />
+											<span>
+												(1�씪 湲곗�)
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="title_td">
+											<span>
+												<font class="dot">��</font> 蹂댁쑀���닔/蹂댁쑀硫댁쟻
+											</span>
+										</td>
+										<td colspan="3" align="left" class="info_td">
+											<input type="text" name="" class="input" style="width:58px; margin-right:10px;" />
+											<span>
+												/
+											</span>
+											<input type="text" name="" class="input" style="width:58px; margin-left:10px;" />
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="title_td">
+											<span>
+												<font class="dot_off">��</font> 吏��뿭
+											</span>
+										</td>
+										<td colspan="3" align="left" class="info_td">
+											<table cellpadding="0" cellspacing="0">
+												<tbody>
+													<tr>
+														<td align="left">
+															<select name="" class="select" style="width:84px;">
+																<option value="">�꽑�깮</option>
+															</select>
+														</td>
+														<td align="center" width="8">&nbsp;</td>
+														<td align="left">
+															<select name="" class="select" style="width:84px;">
+																<option value="">�꽑�깮</option>
+															</select>
+														</td>
+														<td align="center" width="8">&nbsp;</td>
+														<td align="left">
+															<input type="text" name="" placeholder="(�굹癒몄�二쇱냼)" class="input" style="width:688px;" />
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="title_td">
+											<span>
+												<font class="dot">��</font> �긽�꽭�꽕紐�
+											</span>
+										</td>
+										<td colspan="3" align="left" class="info_td">
+											<textarea name="" placeholder="(寃뚯뒪�듃�뿉寃� �븯怨좎떢�� 硫붿꽭吏�瑜� �옉�꽦�빐二쇱꽭�슂.)" class="textarea"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td align="left" class="title_td">
+											<span>
+												<font class="dot">��</font> �궗吏� �삱由ш린 (*4�옣)
+											</span>
+										</td>
+										<td colspan="3" align="left" class="info_td">
+											<div class="upload_con">
+												<ul>
+													<li>
+														<div class="list_div">
+															<div class="img_con">
+																<img src="" onerror="this.src='/UserMan2/images/rental/rental_sub03_upload_none_img.png'" id="preview_file_input01"  alt="�봽濡쒗븘 �궗吏�" width="180" height="103">
+																<input type="hidden" id="image_profile_view_input01" class="input" readonly="readonly" />
+															</div>
+
+															<div class="btn_con">
+																<label for="file-input01" class="label_btn">
+																	<input id="file-input01" name="upfile" type="file" class="file_input" accept="file_extension|image/*|media_type" onchange="image_profile_input01(this.value); fn_previewImg01(this, 'preview_file_input01');" />
+																	<span>�뾽濡쒕뱶</span>
+																</label>
+
+																<a href="javascript:delete_image_profile01();" class="a_btn">
+																	痍⑥냼
+																</a>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="list_div">
+															<div class="img_con">
+																<img src="" onerror="this.src='/UserMan2/images/rental/rental_sub03_upload_none_img.png'" id="preview_file_input02"  alt="�봽濡쒗븘 �궗吏�" width="180" height="103">
+																<input type="hidden" id="image_profile_view_input02" class="input" readonly="readonly" />
+															</div>
+
+															<div class="btn_con">
+																<label for="file-input02" class="label_btn">
+																	<input id="file-input02" name="upfile" type="file" class="file_input" accept="file_extension|image/*|media_type" onchange="image_profile_input02(this.value); fn_previewImg02(this, 'preview_file_input02');" />
+																	<span>�뾽濡쒕뱶</span>
+																</label>
+
+																<a href="javascript:delete_image_profile02();" class="a_btn">
+																	痍⑥냼
+																</a>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="list_div">
+															<div class="img_con">
+																<img src="" onerror="this.src='/UserMan2/images/rental/rental_sub03_upload_none_img.png'" id="preview_file_input03"  alt="�봽濡쒗븘 �궗吏�" width="180" height="103">
+																<input type="hidden" id="image_profile_view_input03" class="input" readonly="readonly" />
+															</div>
+
+															<div class="btn_con">
+																<label for="file-input03" class="label_btn">
+																	<input id="file-input03" name="upfile" type="file" class="file_input" accept="file_extension|image/*|media_type" onchange="image_profile_input03(this.value); fn_previewImg03(this, 'preview_file_input03');" />
+																	<span>�뾽濡쒕뱶</span>
+																</label>
+
+																<a href="javascript:delete_image_profile03();" class="a_btn">
+																	痍⑥냼
+																</a>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="list_div">
+															<div class="img_con">
+																<img src="" onerror="this.src='/UserMan2/images/rental/rental_sub03_upload_none_img.png'" id="preview_file_input04"  alt="�봽濡쒗븘 �궗吏�" width="180" height="103">
+																<input type="hidden" id="image_profile_view_input04" class="input" readonly="readonly" />
+															</div>
+
+															<div class="btn_con">
+																<label for="file-input04" class="label_btn">
+																	<input id="file-input04" name="upfile" type="file" class="file_input" accept="file_extension|image/*|media_type" onchange="image_profile_input04(this.value); fn_previewImg04(this, 'preview_file_input04');" />
+																	<span>�뾽濡쒕뱶</span>
+																</label>
+
+																<a href="javascript:delete_image_profile04();" class="a_btn">
+																	痍⑥냼
+																</a>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="btn_con">
+							<a href="javascript:alert_message();">
+								<img src="/UserMan2/images/rental/rental_sub03_btn.png" alt="�젣異쒗븯湲�" />
+							</a>
+						</div>
+					</div>
+				</form>
+
+				<div id="alert_con">
+					<div class="title_con">
+						<table cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left">
+										<span>
+											�쎒 �럹�씠吏� 硫붿꽭吏�
+										</span>
+									</td>
+									<td align="center" width="21">
+										<a href="javascript:alert_message();">
+											<img src="/UserMan2/images/sub/alert_close_btn.png" alt="X" />
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="contents_con">
+						<div class="intro_con">
+							<div class="img_con">
+								<img src="/UserMan2/images/rental/rental_sub01_write_alert_img.png" alt="�뼹�읉李� �씠誘몄�" />
+							</div>
+
+							<div class="text_con">
+								<span>
+									�벑濡앹씠 �셿猷뚮릺�뿀�뒿�땲�떎. <br />
+									媛먯궗�빀�땲�떎.
+								</span>
+							</div>
+						</div>
+
+						<div class="btn_con">
+							<a href="#" class="a_btn">
+								�솗�씤
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" language="javascript">
+		// �궗吏�01
+		function image_profile_input01(val){
+			$("#image_profile_view_input01").val(val);
+			$("#image_profile_view_input01").focus();
+		}
+		
+		// �궗吏�01
+		function fn_previewImg01(input, preImg) {
+		   // param : input - �뙆�씪�뾽濡쒕뱶 input 媛앹껜 change �씠踰ㅽ듃�뿉�꽌 this 濡� 諛쏆븘�삩�떎
+		   // preImg - 誘몃━蹂닿린 �씠誘몄�瑜� 蹂댁뿬以� img �깭洹�  ID 
+			if ($(input).val()!="") {
+				//�솗�옣�옄 �솗�씤
+				var ext = $(input).val().split('.').pop().toLowerCase();
+				if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+					alert('gif,png,jpg,jpeg �뙆�씪留� �뾽濡쒕뱶 �븷�닔 �엳�뒿�땲�떎.');
+					return;
+				}
+					  
+				if ( window.FileReader ) {
+					 /*IE 9 �씠�긽�뿉�꽌�뒗 FileReader  �씠�슜*/
+					var reader = new FileReader();
+						reader.onload = function (e) {
+							$('#'+preImg).attr('src', e.target.result); 
+						};
+						reader.readAsDataURL(input.files[0]);
+						return input.files[0].name;  // �뙆�씪紐� return
+				} else {
+					 /* IE8 �쟾�슜 �씠誘몄� 誘몃━蹂닿린 */ 
+					input.select();
+					var src = document.selection.createRange().text;
+					$('#'+preImg).attr('src', src);  
+					var n = src.substring(src.lastIndexOf('\\') + 1);
+					return n; // �뙆�씪紐� return
+				}
+			}
+		}
+
+		// �궗吏�01
+		function delete_image_profile01() {
+			$("#preview_file_input01").attr("src","");	
+		}
+
+		// �궗吏�02
+		function image_profile_input02(val){
+			$("#image_profile_view_input02").val(val);
+			$("#image_profile_view_input02").focus();
+		}
+		
+		// �궗吏�02
+		function fn_previewImg02(input, preImg) {
+		   // param : input - �뙆�씪�뾽濡쒕뱶 input 媛앹껜 change �씠踰ㅽ듃�뿉�꽌 this 濡� 諛쏆븘�삩�떎
+		   // preImg - 誘몃━蹂닿린 �씠誘몄�瑜� 蹂댁뿬以� img �깭洹�  ID 
+			if ($(input).val()!="") {
+				//�솗�옣�옄 �솗�씤
+				var ext = $(input).val().split('.').pop().toLowerCase();
+				if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+					alert('gif,png,jpg,jpeg �뙆�씪留� �뾽濡쒕뱶 �븷�닔 �엳�뒿�땲�떎.');
+					return;
+				}
+					  
+				if ( window.FileReader ) {
+					 /*IE 9 �씠�긽�뿉�꽌�뒗 FileReader  �씠�슜*/
+					var reader = new FileReader();
+						reader.onload = function (e) {
+							$('#'+preImg).attr('src', e.target.result); 
+						};
+						reader.readAsDataURL(input.files[0]);
+						return input.files[0].name;  // �뙆�씪紐� return
+				} else {
+					 /* IE8 �쟾�슜 �씠誘몄� 誘몃━蹂닿린 */ 
+					input.select();
+					var src = document.selection.createRange().text;
+					$('#'+preImg).attr('src', src);  
+					var n = src.substring(src.lastIndexOf('\\') + 1);
+					return n; // �뙆�씪紐� return
+				}
+			}
+		}
+
+		// �궗吏�02
+		function delete_image_profile02() {
+			$("#preview_file_input02").attr("src","");	
+		}
+
+		// �궗吏�03
+		function image_profile_input03(val){
+			$("#image_profile_view_input03").val(val);
+			$("#image_profile_view_input03").focus();
+		}
+		
+		// �궗吏�03
+		function fn_previewImg03(input, preImg) {
+		   // param : input - �뙆�씪�뾽濡쒕뱶 input 媛앹껜 change �씠踰ㅽ듃�뿉�꽌 this 濡� 諛쏆븘�삩�떎
+		   // preImg - 誘몃━蹂닿린 �씠誘몄�瑜� 蹂댁뿬以� img �깭洹�  ID 
+			if ($(input).val()!="") {
+				//�솗�옣�옄 �솗�씤
+				var ext = $(input).val().split('.').pop().toLowerCase();
+				if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+					alert('gif,png,jpg,jpeg �뙆�씪留� �뾽濡쒕뱶 �븷�닔 �엳�뒿�땲�떎.');
+					return;
+				}
+					  
+				if ( window.FileReader ) {
+					 /*IE 9 �씠�긽�뿉�꽌�뒗 FileReader  �씠�슜*/
+					var reader = new FileReader();
+						reader.onload = function (e) {
+							$('#'+preImg).attr('src', e.target.result); 
+						};
+						reader.readAsDataURL(input.files[0]);
+						return input.files[0].name;  // �뙆�씪紐� return
+				} else {
+					 /* IE8 �쟾�슜 �씠誘몄� 誘몃━蹂닿린 */ 
+					input.select();
+					var src = document.selection.createRange().text;
+					$('#'+preImg).attr('src', src);  
+					var n = src.substring(src.lastIndexOf('\\') + 1);
+					return n; // �뙆�씪紐� return
+				}
+			}
+		}
+
+		// �궗吏�03
+		function delete_image_profile03() {
+			$("#preview_file_input03").attr("src","");	
+		}
+
+		// �궗吏�04
+		function image_profile_input04(val){
+			$("#image_profile_view_input04").val(val);
+			$("#image_profile_view_input04").focus();
+		}
+		
+		// �궗吏�04
+		function fn_previewImg04(input, preImg) {
+		   // param : input - �뙆�씪�뾽濡쒕뱶 input 媛앹껜 change �씠踰ㅽ듃�뿉�꽌 this 濡� 諛쏆븘�삩�떎
+		   // preImg - 誘몃━蹂닿린 �씠誘몄�瑜� 蹂댁뿬以� img �깭洹�  ID 
+			if ($(input).val()!="") {
+				//�솗�옣�옄 �솗�씤
+				var ext = $(input).val().split('.').pop().toLowerCase();
+				if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+					alert('gif,png,jpg,jpeg �뙆�씪留� �뾽濡쒕뱶 �븷�닔 �엳�뒿�땲�떎.');
+					return;
+				}
+					  
+				if ( window.FileReader ) {
+					 /*IE 9 �씠�긽�뿉�꽌�뒗 FileReader  �씠�슜*/
+					var reader = new FileReader();
+						reader.onload = function (e) {
+							$('#'+preImg).attr('src', e.target.result); 
+						};
+						reader.readAsDataURL(input.files[0]);
+						return input.files[0].name;  // �뙆�씪紐� return
+				} else {
+					 /* IE8 �쟾�슜 �씠誘몄� 誘몃━蹂닿린 */ 
+					input.select();
+					var src = document.selection.createRange().text;
+					$('#'+preImg).attr('src', src);  
+					var n = src.substring(src.lastIndexOf('\\') + 1);
+					return n; // �뙆�씪紐� return
+				}
+			}
+		}
+
+		// �궗吏�04
+		function delete_image_profile04() {
+			$("#preview_file_input04").attr("src","");	
+		}
+	</script>
+
+<? include $_SERVER['DOCUMENT_ROOT'].'/include/footer.html'; ?>	
